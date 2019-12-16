@@ -1,5 +1,10 @@
 package com.jojoldu.book.springboot.web.dto;
 
-public class HelloResponseDto {
+import lombok.*;
 
+@Getter
+@RequiredArgsConstructor
+public class HelloResponseDto {
+    private final String name;
+    private final int amount;
 }
